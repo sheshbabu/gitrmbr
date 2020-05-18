@@ -1,0 +1,18 @@
+{
+  "name": "gitrmbr",
+  "version": "1.0.0",
+  "description": "CLI to delete git branches",
+  "main": "index.js",
+  "keywords": [
+    "cli",
+    "git",
+    "npx",
+    "nodejs"
+  ],
+  "author": "Sheshbabu Chinnakonda",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "shelljs": "^0.8.4"
+  }
+}
