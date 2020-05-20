@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CLI to delete git branches",
   "main": "index.js",
+  "bin": "index.js",
   "keywords": [
     "cli",
     "git",
