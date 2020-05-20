@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const shell = require("shelljs");
 const inquirer = require("inquirer");
 const git = require("./git");
@@ -12,17 +14,17 @@ const questions = [
     type: "checkbox",
     name: "branches",
     message: "What branches do you want to delete?",
-    choices: git.getBranches(),
+    choices: git.getBranches()
   },
   {
     type: "confirm",
     name: "shouldDelete",
     message: "Are you sure you want to delete all these branches?",
-    default: false,
-  },
+    default: false
+  }
 ];
 
-inquirer.prompt(questions).then((answers) => {
+inquirer.prompt(questions).then(answers => {
   const { branches, shouldDelete } = answers;
 
   if (shouldDelete === false) {
